@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LocalPackageMetadataFile xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Items>
+    <Item>
+      <ItemLocation>
+        <ItemType>AllFormulas</ItemType>
+        <ItemPath />
+      </ItemLocation>
+      <StableEntries>
+        <Entry Type="Relationships" Value="sAAAAAA==" />
+      </StableEntries>
+    </Item>
+    <Item>
+      <ItemLocation>
+        <ItemType>Formula</ItemType>
+        <ItemPath>Section1/Cliente</ItemPath>
+      </ItemLocation>
+      <StableEntries>
+        <Entry Type="IsPrivate" Value="l0" />
+        <Entry Type="IsDirectQuery" Value="l0" />
+        <Entry Type="FillColumnNames" Value="s[&quot;Cliente_ID&quot;,&quot;Cliente&quot;,&quot;CPF&quot;,&quot;CEP&quot;,&quot;Estado&quot;,&quot;Cidade&quot;,&quot;Bairro&quot;,&quot;Rua&quot;,&quot;Número&quot;,&quot;Latitude&quot;,&quot;Longitude&quot;]" />
+        <Entry Type="RelationshipInfoContainer" Value="s{&quot;columnCount&quot;:11,&quot;keyColumnNames&quot;:[],&quot;queryRelationships&quot;:[],&quot;columnIdentities&quot;:[&quot;Section1/Cliente/Tipo Alterado.{Cliente_ID,0}&quot;,&quot;Section1/Cliente/Tipo Alterado.{Cliente,1}&quot;,&quot;Section1/Cliente/Tipo Alterado.{CPF,2}&quot;,&quot;Section1/Cliente/Tipo Alterado.{CEP,3}&quot;,&quot;Section1/Cliente/Tipo Alterado.{Estado,4}&quot;,&quot;Section1/Cliente/Tipo Alterado.{Cidade,5}&quot;,&quot;Section1/Cliente/Tipo Alterado.{Bairro,6}&quot;,&quot;Section1/Cliente/Tipo Alterado.{Rua,7}&quot;,&quot;Section1/Cliente/Tipo Alterado.{Número,8}&quot;,&quot;Section1/Cliente/Tipo Alterado.{Latitude,9}&quot;,&quot;Section1/Cliente/Tipo Alterado.{Longitude,10}&quot;],&quot;ColumnCount&quot;:11,&quot;KeyColumnNames&quot;:[],&quot;ColumnIdentities&quot;:[&quot;Section1/Cliente/Tipo Alterado.{Cliente_ID,0}&quot;,&quot;Section1/Cliente/Tipo Alterado.{Cliente,1}&quot;,&quot;Section1/Cliente/Tipo Alterado.{CPF,2}&quot;,&quot;Section1/Cliente/Tipo Alterado.{CEP,3}&quot;,&quot;Section1/Cliente/Tipo Alterado.{Estado,4}&quot;,&quot;Section1/Cliente/Tipo Alterado.{Cidade,5}&quot;,&quot;Section1/Cliente/Tipo Alterado.{Bairro,6}&quot;,&quot;Section1/Cliente/Tipo Alterado.{Rua,7}&quot;,&quot;Section1/Cliente/Tipo Alterado.{Número,8}&quot;,&quot;Section1/Cliente/Tipo Alterado.{Latitude,9}&quot;,&quot;Section1/Cliente/Tipo Alterado.{Longitude,10}&quot;],&quot;RelationshipInfo&quot;:[]}" />
+        <Entry Type="LastAnalysisServicesFormulaText" Value="s{&quot;IncludesReferencedQueries&quot;:true,&quot;RootFormulaText&quot;:&quot;let\r\n    Fonte = Excel.Workbook(File.Contents(\&quot;C:\\Users\\reyna\\OneDrive\\Treinamento\\Treinamento.xlsx\&quot;), null, true),\r\n    Cliente_Sheet = Fonte{[Item=\&quot;Cliente\&quot;,Kind=\&quot;Sheet\&quot;]}[Data],\r\n    #\&quot;Cabeçalhos Promovidos\&quot; = Table.PromoteHeaders(Cliente_Sheet, [PromoteAllScalars=true]),\r\n    #\&quot;Tipo Alterado\&quot; = Table.TransformColumnTypes(#\&quot;Cabeçalhos Promovidos\&quot;,{{\&quot;Cliente_ID\&quot;, Int64.Type}, {\&quot;Cliente\&quot;, type text}, {\&quot;CPF\&quot;, Int64.Type}, {\&quot;CEP\&quot;, type text}, {\&quot;Estado\&quot;, type text}, {\&quot;Cidade\&quot;, type text}, {\&quot;Bairro\&quot;, type text}, {\&quot;Rua\&quot;, type text}, {\&quot;Número\&quot;, Int64.Type}, {\&quot;Latitude\&quot;, type number}, {\&quot;Longitude\&quot;, type number}})\r\nin\r\n    #\&quot;Tipo Alterado\&quot;&quot;,&quot;ReferencedQueriesFormulaText&quot;:{}}" />
+        <Entry Type="IsLastAnalysisServicesFormulaTextCollection" Value="l1" />
+        <Entry Type="LoadedToAnalysisServices" Value="l1" />
+        <Entry Type="BufferNextRefresh" Value="l0" />
+        <Entry Type="ResultType" Value="sTable" />
+      </StableEntries>
+    </Item>
+    <Item>
+      <ItemLocation>
+        <ItemType>Formula</ItemType>
+        <ItemPath>Section1/Cliente/Fonte</ItemPath>
+      </ItemLocation>
+      <StableEntries />
+    </Item>
+    <Item>
+      <ItemLocation>
+        <ItemType>Formula</ItemType>
+        <ItemPath>Section1/Cliente/Cliente_Sheet</ItemPath>
+      </ItemLocation>
+      <StableEntries />
+    </Item>
+    <Item>
+      <ItemLocation>
+        <ItemType>Formula</ItemType>
+        <ItemPath>Section1/Produtos</ItemPath>
+      </ItemLocation>
+      <StableEntries>
+        <Entry Type="IsPrivate" Value="l0" />
+        <Entry Type="IsDirectQuery" Value="l0" />
+        <Entry Type="FillColumnNames" Value="s[&quot;Produto_ID&quot;,&quot;Produto&quot;,&quot;Preço&quot;,&quot;Categoria&quot;]" />
+        <Entry Type="RelationshipInfoContainer" Value="s{&quot;columnCount&quot;:4,&quot;keyColumnNames&quot;:[],&quot;queryRelationships&quot;:[],&quot;columnIdentities&quot;:[&quot;Section1/Produtos/Tipo Alterado.{Produto_ID,0}&quot;,&quot;Section1/Produtos/Tipo Alterado.{Produto,1}&quot;,&quot;Section1/Produtos/Tipo Alterado.{Preço,2}&quot;,&quot;Section1/Produtos/Tipo Alterado.{Categoria,3}&quot;],&quot;ColumnCount&quot;:4,&quot;KeyColumnNames&quot;:[],&quot;ColumnIdentities&quot;:[&quot;Section1/Produtos/Tipo Alterado.{Produto_ID,0}&quot;,&quot;Section1/Produtos/Tipo Alterado.{Produto,1}&quot;,&quot;Section1/Produtos/Tipo Alterado.{Preço,2}&quot;,&quot;Section1/Produtos/Tipo Alterado.{Categoria,3}&quot;],&quot;RelationshipInfo&quot;:[]}" />
+        <Entry Type="LastAnalysisServicesFormulaText" Value="s{&quot;IncludesReferencedQueries&quot;:true,&quot;RootFormulaText&quot;:&quot;let\r\n    Fonte = Excel.Workbook(File.Contents(\&quot;C:\\Users\\reyna\\OneDrive\\Treinamento\\Treinamento.xlsx\&quot;), null, true),\r\n    Produtos_Sheet = Fonte{[Item=\&quot;Produtos\&quot;,Kind=\&quot;Sheet\&quot;]}[Data],\r\n    #\&quot;Cabeçalhos Promovidos\&quot; = Table.PromoteHeaders(Produtos_Sheet, [PromoteAllScalars=true]),\r\n    #\&quot;Tipo Alterado\&quot; = Table.TransformColumnTypes(#\&quot;Cabeçalhos Promovidos\&quot;,{{\&quot;Produto_ID\&quot;, Int64.Type}, {\&quot;Produto\&quot;, type text}, {\&quot;Preço\&quot;, Int64.Type}, {\&quot;Categoria\&quot;, type text}})\r\nin\r\n    #\&quot;Tipo Alterado\&quot;&quot;,&quot;ReferencedQueriesFormulaText&quot;:{}}" />
+        <Entry Type="IsLastAnalysisServicesFormulaTextCollection" Value="l1" />
+        <Entry Type="LoadedToAnalysisServices" Value="l1" />
+        <Entry Type="BufferNextRefresh" Value="l0" />
+        <Entry Type="ResultType" Value="sTable" />
+      </StableEntries>
+    </Item>
+    <Item>
+      <ItemLocation>
+        <ItemType>Formula</ItemType>
+        <ItemPath>Section1/Produtos/Fonte</ItemPath>
+      </ItemLocation>
+      <StableEntries />
+    </Item>
+    <Item>
+      <ItemLocation>
+        <ItemType>Formula</ItemType>
+        <ItemPath>Section1/Produtos/Produtos_Sheet</ItemPath>
+      </ItemLocation>
+      <StableEntries />
+    </Item>
+    <Item>
+      <ItemLocation>
+        <ItemType>Formula</ItemType>
+        <ItemPath>Section1/Produtos/Cabe%C3%A7alhos%20Promovidos</ItemPath>
+      </ItemLocation>
+      <StableEntries />
+    </Item>
+    <Item>
+      <ItemLocation>
+        <ItemType>Formula</ItemType>
+        <ItemPath>Section1/Produtos/Tipo%20Alterado</ItemPath>
+      </ItemLocation>
+      <StableEntries />
+    </Item>
+    <Item>
+      <ItemLocation>
+        <ItemType>Formula</ItemType>
+        <ItemPath>Section1/Vendas</ItemPath>
+      </ItemLocation>
+      <StableEntries>
+        <Entry Type="IsPrivate" Value="l0" />
+        <Entry Type="IsDirectQuery" Value="l0" />
+        <Entry Type="FillColumnNames" Value="s[&quot;Venda_ID&quot;,&quot;Vendedor_ID&quot;,&quot;Cliente_ID&quot;,&quot;Produto_ID&quot;,&quot;DataVenda&quot;,&quot;Quantidade&quot;,&quot;Valor Total&quot;,&quot;Valor Por Unidade&quot;]" />
+        <Entry Type="RelationshipInfoContainer" Value="s{&quot;columnCount&quot;:8,&quot;keyColumnNames&quot;:[],&quot;queryRelationships&quot;:[],&quot;columnIdentities&quot;:[&quot;Section1/Vendas/Tipo Alterado.{Venda_ID,0}&quot;,&quot;Section1/Vendas/Tipo Alterado.{Vendedor_ID,1}&quot;,&quot;Section1/Vendas/Tipo Alterado.{Cliente_ID,2}&quot;,&quot;Section1/Vendas/Tipo Alterado.{Produto_ID,3}&quot;,&quot;Section1/Vendas/Tipo Alterado.{DataVenda,4}&quot;,&quot;Section1/Vendas/Tipo Alterado.{Quantidade,5}&quot;,&quot;Section1/Vendas/Tipo Alterado.{Valor Total,6}&quot;,&quot;Section1/Vendas/Tipo Alterado.{Valor Por Unidade,7}&quot;],&quot;ColumnCount&quot;:8,&quot;KeyColumnNames&quot;:[],&quot;ColumnIdentities&quot;:[&quot;Section1/Vendas/Tipo Alterado.{Venda_ID,0}&quot;,&quot;Section1/Vendas/Tipo Alterado.{Vendedor_ID,1}&quot;,&quot;Section1/Vendas/Tipo Alterado.{Cliente_ID,2}&quot;,&quot;Section1/Vendas/Tipo Alterado.{Produto_ID,3}&quot;,&quot;Section1/Vendas/Tipo Alterado.{DataVenda,4}&quot;,&quot;Section1/Vendas/Tipo Alterado.{Quantidade,5}&quot;,&quot;Section1/Vendas/Tipo Alterado.{Valor Total,6}&quot;,&quot;Section1/Vendas/Tipo Alterado.{Valor Por Unidade,7}&quot;],&quot;RelationshipInfo&quot;:[]}" />
+        <Entry Type="LastAnalysisServicesFormulaText" Value="s{&quot;IncludesReferencedQueries&quot;:true,&quot;RootFormulaText&quot;:&quot;let\r\n    Fonte = Excel.Workbook(File.Contents(\&quot;C:\\Users\\reyna\\OneDrive\\Treinamento\\Treinamento.xlsx\&quot;), null, true),\r\n    Vendas_Sheet = Fonte{[Item=\&quot;Vendas\&quot;,Kind=\&quot;Sheet\&quot;]}[Data],\r\n    #\&quot;Cabeçalhos Promovidos\&quot; = Table.PromoteHeaders(Vendas_Sheet, [PromoteAllScalars=true]),\r\n    #\&quot;Tipo Alterado\&quot; = Table.TransformColumnTypes(#\&quot;Cabeçalhos Promovidos\&quot;,{{\&quot;Venda_ID\&quot;, Int64.Type}, {\&quot;Vendedor_ID\&quot;, Int64.Type}, {\&quot;Cliente_ID\&quot;, Int64.Type}, {\&quot;Produto_ID\&quot;, Int64.Type}, {\&quot;DataVenda\&quot;, type date}, {\&quot;Quantidade\&quot;, Int64.Type}, {\&quot;Valor Total\&quot;, Int64.Type}, {\&quot;Valor Por Unidade\&quot;, Int64.Type}})\r\nin\r\n    #\&quot;Tipo Alterado\&quot;&quot;,&quot;ReferencedQueriesFormulaText&quot;:{}}" />
+        <Entry Type="IsLastAnalysisServicesFormulaTextCollection" Value="l1" />
+        <Entry Type="LoadedToAnalysisServices" Value="l1" />
+        <Entry Type="BufferNextRefresh" Value="l0" />
+        <Entry Type="ResultType" Value="sTable" />
+      </StableEntries>
+    </Item>
+    <Item>
+      <ItemLocation>
+        <ItemType>Formula</ItemType>
+        <ItemPath>Section1/Vendas/Fonte</ItemPath>
+      </ItemLocation>
+      <StableEntries />
+    </Item>
+    <Item>
+      <ItemLocation>
+        <ItemType>Formula</ItemType>
+        <ItemPath>Section1/Vendas/Vendas_Sheet</ItemPath>
+      </ItemLocation>
+      <StableEntries />
+    </Item>
+    <Item>
+      <ItemLocation>
+        <ItemType>Formula</ItemType>
+        <ItemPath>Section1/Vendas/Cabe%C3%A7alhos%20Promovidos</ItemPath>
+      </ItemLocation>
+      <StableEntries />
+    </Item>
+    <Item>
+      <ItemLocation>
+        <ItemType>Formula</ItemType>
+        <ItemPath>Section1/Vendas/Tipo%20Alterado</ItemPath>
+      </ItemLocation>
+      <StableEntries />
+    </Item>
+    <Item>
+      <ItemLocation>
+        <ItemType>Formula</ItemType>
+        <ItemPath>Section1/Vendedor</ItemPath>
+      </ItemLocation>
+      <StableEntries>
+        <Entry Type="IsPrivate" Value="l0" />
+        <Entry Type="IsDirectQuery" Value="l0" />
+        <Entry Type="FillColumnNames" Value="s[&quot;Vendedor_ID&quot;,&quot;Vendedor&quot;]" />
+        <Entry Type="RelationshipInfoContainer" Value="s{&quot;columnCount&quot;:2,&quot;keyColumnNames&quot;:[],&quot;queryRelationships&quot;:[],&quot;columnIdentities&quot;:[&quot;Section1/Vendedor/Tipo Alterado.{Vendedor_ID,0}&quot;,&quot;Section1/Vendedor/Tipo Alterado.{Vendedor,1}&quot;],&quot;ColumnCount&quot;:2,&quot;KeyColumnNames&quot;:[],&quot;ColumnIdentities&quot;:[&quot;Section1/Vendedor/Tipo Alterado.{Vendedor_ID,0}&quot;,&quot;Section1/Vendedor/Tipo Alterado.{Vendedor,1}&quot;],&quot;RelationshipInfo&quot;:[]}" />
+        <Entry Type="LastAnalysisServicesFormulaText" Value="s{&quot;IncludesReferencedQueries&quot;:true,&quot;RootFormulaText&quot;:&quot;let\r\n    Fonte = Excel.Workbook(File.Contents(\&quot;C:\\Users\\reyna\\OneDrive\\Treinamento\\Treinamento.xlsx\&quot;), null, true),\r\n    Vendedor_Sheet = Fonte{[Item=\&quot;Vendedor\&quot;,Kind=\&quot;Sheet\&quot;]}[Data],\r\n    #\&quot;Cabeçalhos Promovidos\&quot; = Table.PromoteHeaders(Vendedor_Sheet, [PromoteAllScalars=true]),\r\n    #\&quot;Tipo Alterado\&quot; = Table.TransformColumnTypes(#\&quot;Cabeçalhos Promovidos\&quot;,{{\&quot;Vendedor_ID\&quot;, Int64.Type}, {\&quot;Vendedor\&quot;, type text}})\r\nin\r\n    #\&quot;Tipo Alterado\&quot;&quot;,&quot;ReferencedQueriesFormulaText&quot;:{}}" />
+        <Entry Type="IsLastAnalysisServicesFormulaTextCollection" Value="l1" />
+        <Entry Type="LoadedToAnalysisServices" Value="l1" />
+        <Entry Type="BufferNextRefresh" Value="l0" />
+        <Entry Type="ResultType" Value="sTable" />
+      </StableEntries>
+    </Item>
+    <Item>
+      <ItemLocation>
+        <ItemType>Formula</ItemType>
+        <ItemPath>Section1/Vendedor/Fonte</ItemPath>
+      </ItemLocation>
+      <StableEntries />
+    </Item>
+    <Item>
+      <ItemLocation>
+        <ItemType>Formula</ItemType>
+        <ItemPath>Section1/Vendedor/Vendedor_Sheet</ItemPath>
+      </ItemLocation>
+      <StableEntries />
+    </Item>
+    <Item>
+      <ItemLocation>
+        <ItemType>Formula</ItemType>
+        <ItemPath>Section1/Vendedor/Cabe%C3%A7alhos%20Promovidos</ItemPath>
+      </ItemLocation>
+      <StableEntries />
+    </Item>
+    <Item>
+      <ItemLocation>
+        <ItemType>Formula</ItemType>
+        <ItemPath>Section1/Vendedor/Tipo%20Alterado</ItemPath>
+      </ItemLocation>
+      <StableEntries />
+    </Item>
+    <Item>
+      <ItemLocation>
+        <ItemType>Formula</ItemType>
+        <ItemPath>Section1/Cliente/Cabe%C3%A7alhos%20Promovidos</ItemPath>
+      </ItemLocation>
+      <StableEntries />
+    </Item>
+    <Item>
+      <ItemLocation>
+        <ItemType>Formula</ItemType>
+        <ItemPath>Section1/Cliente/Tipo%20Alterado</ItemPath>
+      </ItemLocation>
+      <StableEntries />
+    </Item>
+  </Items>
+</LocalPackageMetadataFile>
